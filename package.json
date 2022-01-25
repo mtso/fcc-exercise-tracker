@@ -1,0 +1,28 @@
+{
+    "name": "fcc-exercise-tracker",
+    "version": "0.0.1",
+    "description": "A Node app with postgres to track exercise.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "createtables": "env $(cat .env | grep -v '#' | xargs) node ./scripts/create_tables.js"
+    },
+    "dependencies": {
+      "express": "^4.17.2",
+      "body-parser": "^1.19.1",
+      "pg": "^8.7.1",
+      "nanoid": "^3.2.0"
+    },
+    "engines": {
+      "node": "12.x"
+    },
+    "repository": {
+      "url": "https://glitch.com/edit/#!/fcc-exercise-tracker-00"
+    },
+    "license": "MIT",
+    "keywords": [
+      "node",
+      "glitch",
+      "postgres"
+    ]
+  }
